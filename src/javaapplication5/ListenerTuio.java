@@ -27,7 +27,7 @@ import javafx.scene.shape.ArcType;
  *
  * @author santi
  */
-public class TuioListenerExample implements TuioListener{
+public class ListenerTuio implements TuioListener{
     private Pane _contenedor;//contenedor
     private Arc _semiCirculo;//arco para usar como semicirculo
     private ImageView _imagen;//sirve para mostrar imagenes
@@ -35,7 +35,7 @@ public class TuioListenerExample implements TuioListener{
     private HashMap<Long, Arc> _semicirculos= new HashMap<>();
     
     
-    public TuioListenerExample(Pane contenedor) {
+    public ListenerTuio(Pane contenedor) {
         this._contenedor = contenedor;
         this._imagen = new ImageView();
         this._contenedor.getChildren().add(this._imagen);//se agrega la imagen al contenedor
